@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 80%;
+    height: 36px;
+    border-radius: 8px;
+    padding-inline: 8px;
+
+    &:focus {
+        border: solid 1px #0099ff;
+        background-color: rgba(238, 238, 238, 0.26);
+    }
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container>aside {
+    width: 288px;
+    background-color: #000a60;
+    padding-inline: 1rem;
+    padding-block: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search_container>input {
+    width: 100%;
+}
+
+.user_list {
+    width: 100%;
+    height: calc(100% - 55px);
+    overflow-y: auto;
+}
+
+.user_item {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 1rem;
+    margin-block: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.462);
+    }
+}
+
+.user_item>img {
+    width: 3rem;
+    border-radius: 100%;
+    background-color: aliceblue;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
