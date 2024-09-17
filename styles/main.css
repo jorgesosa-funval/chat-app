@@ -54,7 +54,7 @@ input[type="text"] {
     overflow-y: auto;
 }
 
-.user_item {
+.user_item, .destinatario {
     display: flex;
     align-items: center;
     color: aliceblue;
@@ -77,9 +77,21 @@ input[type="text"] {
 
 /* chat */
 header{
-    height: 3.5rem;
+    height: 4rem;
     background-color: #000423;
+    display: none;
 }
+
+ .destinatario{
+    padding: .3rem;
+    margin-left: 8px;
+ }
+
+ .destinatario > img{
+    width: 40px;
+    background-color: aliceblue;
+    border-radius: 100%;
+ }
 
 main{
     display: flex;
@@ -116,7 +128,7 @@ main{
  
 .message_input_container{
     height: 3.5rem;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #000423;
@@ -153,3 +165,5 @@ main{
 .container > .hidden{
     display: none;
 }
+
+ 
